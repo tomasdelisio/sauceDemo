@@ -34,10 +34,16 @@ public class BasePage {
 	}
 	
 	public void actionClick(WebElement element, String id) {
-		if(elementToBeClickable(element, id)) {
-			Actions actions = new Actions(driver);
-		    actions.moveToElement(element).click().build().perform();
-		}
+		do {
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}while(!elementToBeClickable(element, id));
+		
+		Actions actions = new Actions(driver);
+	    actions.moveToElement(element).click().build().perform();
 	}
 
 	public void type(String text, WebElement element, String id) {

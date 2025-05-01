@@ -8,7 +8,7 @@ import utils.Format;
 public class CheckoutPage extends BasePage {
 	/*** VARIABLES ***/
 	// Locators
-	@FindBy(className = "subheader")
+	@FindBy(className = "title")
 	private WebElement checkout_your_information_txt;
 	@FindBy(id = "first-name")
 	private WebElement name_fld;
@@ -16,9 +16,9 @@ public class CheckoutPage extends BasePage {
 	private WebElement lastname_fld;
 	@FindBy(id = "postal-code")
 	private WebElement postal_code_fld;
-	@FindBy(className = "cart_button")
+	@FindBy(id = "continue")
 	private WebElement checkout_btn;
-	@FindBy(className = "subheader")
+	@FindBy(className = "title")
 	private WebElement checkout_overview_txt;
 	@FindBy(className = "summary_quantity")
 	private WebElement total_items_txt;
@@ -34,7 +34,7 @@ public class CheckoutPage extends BasePage {
 	private WebElement tax_txt;
 	@FindBy(className = "summary_total_label")
 	private WebElement total_txt;
-	@FindBy(className = "cart_button")
+	@FindBy(id = "finish")
 	private WebElement finish_btn;
 
 	// Attributes

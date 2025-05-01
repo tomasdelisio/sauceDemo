@@ -53,7 +53,7 @@ public enum Messages {
 	VALIDATE_CHECKOUT("VALIDANDO COMPRA"),
 	
 	// Messages
-	PURCHASE("THANK YOU FOR YOUR ORDER");
+	PURCHASE("Thank you for your order!");
 	
 	/*** VARIABLES ***/
 	private final String message;

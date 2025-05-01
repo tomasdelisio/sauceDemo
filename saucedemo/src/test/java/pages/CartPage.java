@@ -3,10 +3,12 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import utils.Format;
+
 public class CartPage extends BasePage {
 	/*** VARIABLES ***/
 	// Locators
-	@FindBy(className = "subheader")
+	@FindBy(className = "title")
 	private WebElement your_cart_txt;
 	@FindBy(className = "cart_quantity")
 	private WebElement total_items_txt;
@@ -16,7 +18,7 @@ public class CartPage extends BasePage {
 	private WebElement product_description_txt;
 	@FindBy(className = "inventory_item_price")
 	private WebElement product_price_txt;
-	@FindBy(className = "checkout_button")
+	@FindBy(id = "checkout")
 	private WebElement checkout_btn;
 
 	// Variables
@@ -161,7 +163,7 @@ public class CartPage extends BasePage {
 	}
 	
 	public String getProductPriceText() {
-		product_price_text = product_price_txt.getText();
+		product_price_text = Format.format(product_price_txt.getText(), 1);
 		
 		return product_price_text;
 	}

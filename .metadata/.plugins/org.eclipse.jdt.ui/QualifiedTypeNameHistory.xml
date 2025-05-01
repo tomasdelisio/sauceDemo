@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="pages.HomePage"/>
+    <fullyQualifiedTypeName name="pages.CartPage"/>
+    <fullyQualifiedTypeName name="pages.CheckoutPage"/>
+    <fullyQualifiedTypeName name="utils.MessagesCart"/>
+    <fullyQualifiedTypeName name="pages.FinishPage"/>
+    <fullyQualifiedTypeName name="utils.Format"/>
+</qualifiedTypeNameHistroy>

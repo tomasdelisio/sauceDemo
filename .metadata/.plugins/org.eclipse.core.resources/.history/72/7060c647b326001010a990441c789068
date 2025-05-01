@@ -1,0 +1,11 @@
+package utils;
+
+public class Format {	
+	/*** METHODS ***/
+	public String formatPrice(String price) {
+		price = price.substring(1);
+		
+		return price;
+		
+	}
+}

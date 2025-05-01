@@ -1,0 +1,31 @@
+package utils;
+
+public enum MessagesCart {
+	//*** MESSAGES ***//
+	// Login
+	CART("INICIANDO LOGIN"),
+	LOGIN_COMPLETED("LOGIN COMPLETADO"),
+	VALIDATE_LOGIN("VALIDANDO LOGIN"),
+	LOGIN_BTN_SAVED("BOTÓN DE LOGIN ALMACENADO"),
+	LOGIN_BTN_VISIBLE("EL BOTÓN DE LOGIN ES VISIBLE"),
+	LOGIN_OK("LOGIN EXITOSO"),
+	
+	// Error
+	LOGIN_BTN_NOT_VISIBLE("EL BOTÓN DE LOGIN NO ES VISIBLE");
+	
+	/*** VARIABLES ***/
+	private final String message;
+	
+	/*** METHODS ***/
+	// Setter
+	MessagesCarts(String message){
+		this.message = message;
+		
+	}
+	
+	// Getter
+	public String getMessage() {
+		return message;
+		
+	}
+}

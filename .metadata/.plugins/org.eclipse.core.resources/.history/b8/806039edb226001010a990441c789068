@@ -1,0 +1,18 @@
+package utils;
+
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class Format {
+	/*** VARIABLES ***/
+	private String price = null;
+	
+	/*** METHODS ***/
+	public String formatPrice(String price) {
+		price = price.substring(1);
+		
+		return price;
+		
+	}
+}

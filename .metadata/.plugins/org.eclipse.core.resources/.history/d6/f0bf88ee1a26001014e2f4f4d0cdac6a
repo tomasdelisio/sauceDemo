@@ -1,0 +1,58 @@
+package pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class FinishPage extends BasePage {
+	/*** VARIABLES ***/
+	// Locators
+	@FindBy(className = "complete-header")
+	private WebElement finish_msg_txt;
+	
+	// Variables
+	private String purchase_msg_text = null;
+	private Boolean isVisible = null;
+	private static final String finish_msg_txt_id = "Texto Operación Finalizada";
+	
+	// Constructor
+	public FinishPage() {
+		super(driver);
+	}
+
+	/*** METHODS ***/
+	// Visible / Clickable
+	public boolean isFinishMsgTxtVisible() {
+		if (elementVisible(finish_msg_txt, finish_msg_txt_id) != null) {
+			isVisible = true;
+		}
+		return isVisible;
+	}
+
+	// Getter and Setter
+	public WebElement getFinishMsgTxt() {
+		return finish_msg_txt;
+	}
+	
+	public String getFinishMsgText() {
+		finish_msg_text = finish_msg_txt.getText();
+		
+		return finish_msg_text;
+	}
+
+	public void setFinishMsgTxt(WebElement finish_msg_txt) {
+		this.finish_msg_txt = finish_msg_txt;
+	}
+
+	public boolean isVisible() {
+		return isVisible;
+	}
+
+	public void setVisible(boolean isVisible) {
+		this.isVisible = isVisible;
+	}
+	
+	public static String getFinishMsgTxtId() {
+		return finish_msg_txt_id;
+	}
+
+}

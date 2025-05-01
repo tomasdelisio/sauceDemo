@@ -1,0 +1,355 @@
+package pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class CheckoutPage extends BasePage {
+	/*** VARIABLES ***/
+	// Locators
+	@FindBy(className = "subheader")
+	private WebElement checkout_your_information_txt;
+	@FindBy(id = "first-name")
+	private WebElement name_fld;
+	@FindBy(id = "last-name")
+	private WebElement lastname_fld;
+	@FindBy(id = "postal-code")
+	private WebElement postal_code_fld;
+	@FindBy(className = "btn_primary cart_button")
+	private WebElement checkout_btn;
+	@FindBy(className = "subheader")
+	private WebElement checkout_overview_txt;
+	@FindBy(className = "summary_quantity")
+	private WebElement total_items_txt;
+	@FindBy(className = "inventory_item_name")
+	private WebElement product_name_txt;
+	@FindBy(className = "inventory_item_desc")
+	private WebElement product_description_txt;
+	@FindBy(className = "inventory_item_price")
+	private WebElement product_price_txt;
+	@FindBy(className = "summary_subtotal_label")
+	private WebElement item_price_txt;
+	@FindBy(className = "summary_tax_label")
+	private WebElement tax_txt;
+	@FindBy(className = "summary_total_label")
+	private WebElement total_txt;
+	@FindBy(className = "btn_action cart_button")
+	private WebElement finish_btn;
+
+	// Attributes
+	private static final String value = "value";
+	
+	// Variables
+	private String checkout_your_information_text = null;
+	private String name_content = null;
+	private String lastname_content = null;
+	private String postal_code_content = null;
+	private String checkout_overview_text = null;
+	private String total_items_text = null;
+	private String product_name_text = null;
+	private String product_description_text = null;
+	private String product_price_text = null;
+	private String item_price_text = null;
+	private String tax_text = null;
+	private String total_text = null;
+	private boolean isVisible = false;
+	private boolean isClickable = false;
+	private static final String name_fld_id = "Campo Nombre";
+	private static final String lastname_fld_id = "Campo Apellido";
+	private static final String checkout_btn_id = "Checkout Button";
+	private static final String total_items_txt_id = "Total Items Text";
+	private static final String product_name_txt_id = "Product Name Text";
+	private static final String product_description_txt_id = "Product Description Text";
+	private static final String product_price_txt_id = "Product Price Text";
+	private static final String checkout_your_information_txt_id = "'Checkout, Your Information' Text";
+	private static final String checkout_overview_txt_id = "'Checkout, Overview' Text";
+	private static final String item_price_txt_id = "Item Price Text";
+	private static final String tax_txt_id = "Tax Text";
+	private static final String total_txt_id = "Total Text";
+	private static final String finish_btn_id = "Finish Button";
+	
+	// Constructor
+	public CheckoutPage() {
+		super(driver);
+	}
+
+	/*** METHODS ***/
+	public void clickCheckoutBtn() {
+		click(checkout_btn, checkout_btn_id);
+	}
+
+	public void clickFinishBtn() {
+		click(finish_btn, finish_btn_id);
+	}
+
+	// Visible / Clickable
+	public boolean isCheckoutYourInformationVisible() {
+		if (elementVisible(checkout_your_information_txt, checkout_your_information_txt_id) != null) {
+			isVisible = true;
+		}
+		return isVisible;
+	}
+
+	public boolean isCheckoutOverviewVisible() {
+		if (elementVisible(checkout_overview_txt, checkout_overview_txt_id) != null) {
+			isVisible = true;
+		}
+		return isVisible;
+	}
+
+	public boolean isTotalItemsTxtVisible() {
+		if (elementVisible(total_items_txt, total_items_txt_id) != null) {
+			isVisible = true;
+		}
+		return isVisible;
+	}
+
+	public boolean isProductNameTxtVisible() {
+		if (elementVisible(product_name_txt, product_name_txt_id) != null) {
+			isVisible = true;
+		}
+		return isVisible;
+	}
+
+	public boolean isProductDescriptionTxtVisible() {
+		if (elementVisible(product_description_txt, product_description_txt_id) != null) {
+			isVisible = true;
+		}
+		return isVisible;
+	}
+
+	public boolean isProductPriceTxtVisible() {
+		if (elementVisible(product_price_txt, product_price_txt_id) != null) {
+			isVisible = true;
+		}
+		return isVisible;
+	}
+
+	public boolean isFinishBtnClickable() {
+		if (elementToBeClickable(finish_btn, finish_btn_id) != null) {
+			isClickable = true;
+		}
+		return isClickable;
+	}
+
+	// Getter and Setter
+	public WebElement getCheckoutYourInformationTxt() {
+		return checkout_your_information_txt;
+	}
+
+	public void setCheckoutYourInformationTxt(WebElement checkout_your_information_txt) {
+		this.checkout_your_information_txt = checkout_your_information_txt;
+	}
+
+	public WebElement getNameFld() {
+		return name_fld;
+	}
+	
+	public String getNameFldContent() {
+		name_content = getAttribute(name_fld, name_fld_id, value);
+		
+		return name_content;
+		
+	}
+
+	public void setNameFld(WebElement name_fld) {
+		this.name_fld = name_fld;
+	}
+
+	public WebElement getLastnameFld() {
+		return lastname_fld;
+	}
+	
+	public String getLastnameFldContent() {
+		lastname_content = getAttribute(lastname_fld, lastname_fld_id, value);
+		
+		return lastname_content;
+		
+	}
+
+	public void setLastnameFld(WebElement lastname_fld) {
+		this.lastname_fld = lastname_fld;
+	}
+
+	public WebElement getPostalCodeFld() {
+		return postal_code_fld;
+	}
+	
+	public String getPostalCodeFldContent() {
+		postal_code_content = getAttribute(postal_code_fld, postal_code_fld_id, value);
+		
+		return lastname_content;
+		
+	}
+
+	public void setPostalCodeFld(WebElement postal_code_fld) {
+		this.postal_code_fld = postal_code_fld;
+	}
+
+	public WebElement getCheckout_btn() {
+		return checkout_btn;
+	}
+
+	public void setCheckout_btn(WebElement checkout_btn) {
+		this.checkout_btn = checkout_btn;
+	}
+
+	public WebElement getCheckout_overview_txt() {
+		return checkout_overview_txt;
+	}
+
+	public void setCheckout_overview_txt(WebElement checkout_overview_txt) {
+		this.checkout_overview_txt = checkout_overview_txt;
+	}
+
+	public WebElement getTotal_items_txt() {
+		return total_items_txt;
+	}
+
+	public void setTotal_items_txt(WebElement total_items_txt) {
+		this.total_items_txt = total_items_txt;
+	}
+
+	public WebElement getProduct_name_txt() {
+		return product_name_txt;
+	}
+
+	public void setProduct_name_txt(WebElement product_name_txt) {
+		this.product_name_txt = product_name_txt;
+	}
+
+	public WebElement getProduct_description_txt() {
+		return product_description_txt;
+	}
+
+	public void setProduct_description_txt(WebElement product_description_txt) {
+		this.product_description_txt = product_description_txt;
+	}
+
+	public WebElement getProduct_price_txt() {
+		return product_price_txt;
+	}
+
+	public void setProduct_price_txt(WebElement product_price_txt) {
+		this.product_price_txt = product_price_txt;
+	}
+
+	public WebElement getItem_price_txt() {
+		return item_price_txt;
+	}
+
+	public void setItem_price_txt(WebElement item_price_txt) {
+		this.item_price_txt = item_price_txt;
+	}
+
+	public WebElement getTax_txt() {
+		return tax_txt;
+	}
+
+	public void setTax_txt(WebElement tax_txt) {
+		this.tax_txt = tax_txt;
+	}
+
+	public WebElement getTotal_txt() {
+		return total_txt;
+	}
+
+	public void setTotal_txt(WebElement total_txt) {
+		this.total_txt = total_txt;
+	}
+
+	public WebElement getFinish_btn() {
+		return finish_btn;
+	}
+
+	public void setFinish_btn(WebElement finish_btn) {
+		this.finish_btn = finish_btn;
+	}
+
+	public String getName_content() {
+		return name_content;
+	}
+
+	public void setName_content(String name_content) {
+		this.name_content = name_content;
+	}
+
+	public String getLastname_content() {
+		return lastname_content;
+	}
+
+	public void setLastname_content(String lastname_content) {
+		this.lastname_content = lastname_content;
+	}
+
+	public String getPostal_code_content() {
+		return postal_code_content;
+	}
+
+	public void setPostal_code_content(String postal_code_content) {
+		this.postal_code_content = postal_code_content;
+	}
+
+	public boolean isVisible() {
+		return isVisible;
+	}
+
+	public void setVisible(boolean isVisible) {
+		this.isVisible = isVisible;
+	}
+
+	public boolean isClickable() {
+		return isClickable;
+	}
+
+	public void setClickable(boolean isClickable) {
+		this.isClickable = isClickable;
+	}
+
+	public static String getCheckoutBtnId() {
+		return checkout_btn_id;
+	}
+
+	public static String getTotalItemsTxtId() {
+		return total_items_txt_id;
+	}
+
+	public static String getProductNameTxtId() {
+		return product_name_txt_id;
+	}
+
+	public static String getProductDescriptionTxtId() {
+		return product_description_txt_id;
+	}
+
+	public static String getProductPriceTxtId() {
+		return product_price_txt_id;
+	}
+
+	public static String getCheckoutYourInformationTxtId() {
+		return checkout_your_information_txt_id;
+	}
+
+	public static String getCheckoutOverviewTxtId() {
+		return checkout_overview_txt_id;
+	}
+
+	public static String getItemPriceTxtId() {
+		return item_price_txt_id;
+	}
+
+	public static String getTaxTxtId() {
+		return tax_txt_id;
+	}
+
+	public static String getTotalTxtId() {
+		return total_txt_id;
+	}
+
+	public static String getFinishBtnId() {
+		return finish_btn_id;
+	}
+
+	// Getter and Setter
+	
+	
+}

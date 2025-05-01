@@ -245,9 +245,7 @@ public class TestE2E {
 		assertEquals(product_description_home_actual, product_description_cart_actual, PRODUCT_DESCRIPTION_MISMATCH);		
 		assertEquals(product_price_home_actual, product_price_cart_actual, PRODUCT_PRICE_MISMATCH);
 		test.pass(PRODUCT_DATA_OK);
-		
-		//VER SI PODEMOS CONVERTIR ESTO A UN OBJETO DE LA CLASE PRODUCTO (NOMBRE, PRECIO, DESCRIPCION)
-				
+						
 		test.pass(CART_OK);
 		System.out.println(CART_OK + "\nProducto: " + product_name + "\n");
 		

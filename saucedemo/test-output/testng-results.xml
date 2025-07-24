@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-01T18:35:15 ART" name="Default suite" finished-at="2025-05-01T18:35:19 ART" duration-ms="3686">
+  <suite started-at="2025-05-06T12:28:08 ART" name="Default suite" finished-at="2025-05-06T12:28:12 ART" duration-ms="3343">
     <groups>
     </groups>
-    <test started-at="2025-05-01T18:35:15 ART" name="Default test" finished-at="2025-05-01T18:35:19 ART" duration-ms="3686">
+    <test started-at="2025-05-06T12:28:08 ART" name="Default test" finished-at="2025-05-06T12:28:12 ART" duration-ms="3343">
       <class name="test_e2e.TestE2E">
-        <test-method is-config="true" signature="configurateTest()[pri:0, instance:test_e2e.TestE2E@6283d8b8]" started-at="2025-05-01T18:35:16 ART" name="configurateTest" finished-at="2025-05-01T18:35:18 ART" duration-ms="2044" status="PASS">
+        <test-method is-config="true" signature="configurateTest()[pri:0, instance:test_e2e.TestE2E@6283d8b8]" started-at="2025-05-06T12:28:09 ART" name="configurateTest" finished-at="2025-05-06T12:28:10 ART" duration-ms="1741" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configurateTest -->
-        <test-method signature="purchase(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test_e2e.TestE2E@6283d8b8]" started-at="2025-05-01T18:35:18 ART" name="purchase" data-provider="Purchase" finished-at="2025-05-01T18:35:19 ART" duration-ms="1074" status="PASS">
+        <test-method signature="purchase(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test_e2e.TestE2E@6283d8b8]" started-at="2025-05-06T12:28:10 ART" name="purchase" data-provider="Purchase" finished-at="2025-05-06T12:28:11 ART" duration-ms="1046" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,7 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchase -->
-        <test-method is-config="true" signature="finishTest()[pri:0, instance:test_e2e.TestE2E@6283d8b8]" started-at="2025-05-01T18:35:19 ART" name="finishTest" finished-at="2025-05-01T18:35:19 ART" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="finishTest()[pri:0, instance:test_e2e.TestE2E@6283d8b8]" started-at="2025-05-06T12:28:11 ART" name="finishTest" finished-at="2025-05-06T12:28:12 ART" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishTest -->

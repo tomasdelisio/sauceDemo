@@ -5,5 +5,6 @@
     <fullyQualifiedTypeName name="pages.CheckoutPage"/>
     <fullyQualifiedTypeName name="utils.MessagesCart"/>
     <fullyQualifiedTypeName name="pages.FinishPage"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
     <fullyQualifiedTypeName name="utils.Format"/>
 </qualifiedTypeNameHistroy>

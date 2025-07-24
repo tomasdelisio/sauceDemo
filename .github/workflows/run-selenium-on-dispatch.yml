@@ -26,4 +26,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: testng-report
-          path: target/surefire-reports
+          path: saucedemo/src/test/resources/reports

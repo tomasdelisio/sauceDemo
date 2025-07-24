@@ -20,7 +20,7 @@ public class Report {
 	private static int second = date.get(Calendar.SECOND);
 	private static String dateFormatted = String.valueOf(year) + String.valueOf(month) + String.valueOf(day) + String.valueOf(hour) + String.valueOf(minute) + String.valueOf(second);
 	
-	private static String report_name = "REPORT " + dateFormatted;
+	private static String report_name = "REPORT TEST" + dateFormatted;
 	
 	private static String reports_path = "C:\\Users\\tomas\\Desktop\\Automation\\SauceDemo\\saucedemo\\src\\test\\resources\\reports\\" + report_name + "\\" + report_name + type_file;
 	

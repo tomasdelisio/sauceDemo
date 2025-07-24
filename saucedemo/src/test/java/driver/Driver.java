@@ -13,7 +13,7 @@ public class Driver {
 	// Driver configuration
 	public static WebDriver configurate() {
 		// WINDOWS
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver/135/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver/138/chromedriver.exe");
 		
 		// LINUX
 		// System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver/119/chromedriver");
